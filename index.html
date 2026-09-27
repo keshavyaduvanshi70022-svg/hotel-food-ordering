@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Royal Hotel</h1>
+        <p>Delicious Food, Great Experience</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Food</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to Royal Hotel</h2>
+        <p>Choose your favourite food and place your order.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu">
+
+            <div class="card">
+                <h3>Starter</h3>
+                <p>Veg Spring Roll</p>
+                <h4>₹150</h4>
+            </div>
+
+            <div class="card">
+                <h3>Main Course</h3>
+                <p>Paneer Butter Masala</p>
+                <h4>₹250</h4>
+            </div>
+
+            <div class="card">
+                <h3>Dessert</h3>
+                <p>Gulab Jamun</p>
+                <h4>₹100</h4>
+            </div>
+
+            <div class="card">
+                <h3>Drinks</h3>
+                <p>Fresh Lime Soda</p>
+                <h4>₹80</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Place Your Order</h2>
+
+        <form id="orderForm">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <select id="food" required>
+                <option value="">Select Food</option>
+                <option value="Veg Spring Roll">Veg Spring Roll</option>
+                <option value="Paneer Butter Masala">Paneer Butter Masala</option>
+                <option value="Gulab Jamun">Gulab Jamun</option>
+                <option value="Fresh Lime Soda">Fresh Lime Soda</option>
+            </select>
+
+            <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Royal Hotel | Student Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
